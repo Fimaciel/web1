@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Somar valores</h1>
+    <input type="text" id="numero1" placeholder="Informe o numero">
+    <input type="text" id="numero2" placeholder="Informe o numero">
+    <button id="somarbtn">Somar</button>
+    <h2 id="resultado"></h2>
+</body>
+
+<script>
+ $(Document).ready(function () {
+    $("#somarbtn").click(function(){
+
+        let numero1 = parseFloat($('#numero1').val());
+        let numero2 = parseFloat($('#numero2').val());
+
+        var resultado = numero1 + numero2;
+        $('#resultado').text('resultado: ' + resultado);
+ })});
+
+</script>
+</html>
